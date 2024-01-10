@@ -38,3 +38,46 @@ costs 1 hit point.
 ## Helmet/Shield Shall Be Splitered
 If a character has a helmet or a shield equipped, it can be used to negate a
 hit when struck in combat. The item is destroyed after offering this benefit.
+
+## Combat Maneuvers
+When making an attack (combat check) against an enemy, you may choose to apply
+one of the following conditions instead of dealing damage. However, the enemy
+that gets hit may elect to defend against the maneuver, taking damage instead.
+The idea is that attacks that are obviously much more detrimental than simply
+taking damage will be defended against by the target.
+
+## Conditions [Under Construction]
+- **Blinded**
+  - Cannot see
+  - Combat checks against have advantage
+  - Combat checks made have disadvantage
+- **Charmed**
+  - Fast-talk checks against are made with advantage
+- **Confused**
+  - At the start of each turn, roll a die to determine behavior
+    - 1-3: Do nothing
+    - 4: Use all actions to move in a random direction
+    - 5: Attack a random target; Do nothing if no one in range
+    - 6: Move/act normally
+- **Deafened**
+  - Cannot hear
+- **Frightened**
+  - Disadvantage on checks against the source
+  - Cannot move towards the source
+- **Grappled**
+  - Cannot move
+  - Combat checks against the grappled by the grappler have advantage
+  - Combat checks against the grappler by the grappled have disadvantage
+  - Muscle check to escape
+- **Poisoned**
+  - Disadvantage on all checks
+- **Prone**
+  - Melee combat checks against have advantage
+  - Ranged combat checks against have disadvantage
+  - Combat checks made have disadvantage
+  - Must spend an action to get up
+- **Stunned**
+  - Cannot move or speak
+  - Automatically fails saving throws
+  - Combat checks against have advantage
+  - If you begin your turn stunned, the only thing you can do is make a check. If successful, you are no longer stunned and may act normally beginning on your next turn.
