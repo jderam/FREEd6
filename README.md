@@ -9,4 +9,8 @@ A rules-light tabletop roleplaying game by Jeremy Deram.
 5. [Monsters](05_monsters.md)
 6. [Treasures](06_treasures.md)
 
+### Appendices
+- A. [Converting Classic Monsters](appendix_a_converting_monsters.md)
+- B. [Experimental/Optional Rules](appendix_b_experimental_optional_rules.md)
+
 ⚀ ⚁ ⚂ ⚃ ⚄ ⚅
