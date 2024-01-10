@@ -18,13 +18,18 @@ Combat is fast and easy. Follow these steps.
     - Move in to engage an enemy and make an attack with a melee weapon
     - Cast a spell at an enemy, then move behind a rock in an attempt to avoid being shot by arrows
     - Cover a great distance by using both actions to move
-    - Reload a ranged weapon, then fire it
     - Make two melee attacks against an enemy that is already in melee range
-3. Under normal circumstances, each successful attack deal 1 point of damage. Record damage taken as it occurs.
+3. Under normal circumstances, each successful attack deals 1 point of damage. Record damage taken as it occurs.
 4. Once all characters and monsters have had their turn, the combat round is over, and starts again at the beginning. Initiative is rolled anew at the beginning of each round. This continues until one side is defeated, retreats, or surrenders.
 
 ## Crits and Fumbles
-- **Critical Hit**: When you get two 6s on your combat check (⚅⚅), you have landed an extraordinary blow! You may choose to deal double damage, or deal normal damage and apply a [condition](#conditions) to the enemy.
+- **Critical Hit**: When you get two 6s on your combat check (⚅⚅), you have landed an extraordinary blow! You may choose to deal double damage, or deal normal damage and apply one of the following conditions to the enemy.
+  - Blinded (disadvantage on attacks made, advantage on attacks against)
+  - Hamstrung (movement reduced)
+  - Knocked Prone (action to get up, disadvantage on attacks made, advantage on attacks against)
+  - Pushed Back (moved back up to 10 feet)
+  - Restrained (muscle check to escape, otherwise cannot act)
+  - Stunned (spend action to make a saving throw to shake off, otherwise cannot act)
 - **Super-Critical Hit**: When the result of a combat check is three 6s (⚅⚅⚅ which is only possible when making the check with *advantage*) you instantly kill the target!
 - **Fumble**: When *all* dice come up 1 (⚀), regardless of how many are rolled. You must spend your next action to regain your bearings (or other effect as determined by the GM).
 
@@ -38,41 +43,16 @@ A *saving throw* is a check that is made in response to some dire circumstance. 
 When a character is reduced to 0 hit points, they are unconscious and dying. On their next turn, the only thing they can do is make a *saving throw*. If successful, they gain one hit point, regain consciousness, and their turn ends. If the saving throw fails, they will get one more chance on their following turn to make a saving throw, but this time with *disadvantage*. Failure on this roll indicates death.  
 If another character comes to their aid before their turn comes up, with perhaps a health potion or some healing magic, this whole saving throw business can be neatly avoided.
 
-## Rest
-A serving of food and water, combined with a full night's rest causes a character to fully regain any lost hit points.
+## Rest and Recovery
 
-## Conditions
-- **Blinded**
-  - Cannot see
-  - Combat checks against have advantage
-  - Combat checks made have disadvantage
-- **Charmed**
-  - Fast-talk checks against are made with advantage
-- **Confused**
-  - At the start of each turn, roll a die to determine behavior
-    - 1-3: Do nothing
-    - 4: Use all actions to move in a random direction
-    - 5: Attack a random target; Do nothing if no one in range
-    - 6: Move/act normally
-- **Deafened**
-  - Cannot hear
-- **Frightened**
-  - Disadvantage on checks against the source
-  - Cannot move towards the source
-- **Grappled**
-  - Cannot move
-  - Combat checks against the grappled by the grappler have advantage
-  - Combat checks against the grappler by the grappled have disadvantage
-  - Muscle check to escape
-- **Poisoned**
-  - Disadvantage on all checks
-- **Prone**
-  - Melee combat checks against have advantage
-  - Ranged combat checks against have disadvantage
-  - Combat checks made have disadvantage
-  - Must spend an action to get up
-- **Stunned**
-  - Cannot move or speak
-  - Automatically fails saving throws
-  - Combat checks against have advantage
-  - If you begin your turn stunned, the only thing you can do is make a check. If successful, you are no longer stunned and may act normally beginning on your next turn.
+### Full Rest
+A serving of food and water, combined with a full night's rest (preferably in a safe
+location) causes a character to fully regain any lost hit points.
+
+### Short Rest
+Immediately after a combat ends, if the character has a necessary item, a 10-minute rest may be taken
+and the item consumed in order to regain 1 hit point. The specifics of this item are based on GM
+preference, to coincide with the style of game being run. Some examples follow.
+- A bandage to bind wounds
+- A poultice to encourage healing and prevent infection
+- A strong drink to embolden the spirit and numb the pain
