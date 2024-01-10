@@ -1,36 +1,4 @@
-# Monsters
-Monsters are very simple in **The d666 System**. You just need to know hit points, the attacks/actions the monster can perform each turn, and any special abilities or effects. Monsters are not necessarily limited to two actions per round as characters are. Some examples are provided here.
-
-## Sample Monsters
-
-### Giant Rat, Kobold, Goblin
-(Minion type)  
-**Hit Points**: 1  
-This is the simplest form of monster that goes down in one hit. If you want to make them even crappier, make it so their combat checks are only successful on a 6.
-
-### Warrior, Hobgoblin Captain
-(Soldier type)  
-**Hit Points**: 2  
-**Attacks**: 1-2 weapon attacks for 1-2 damage each
-
-### Manticore
-**Hit Points**: 6  
-**Attacks**: Claw/Claw/Bite for 1 damage each OR Shoot up to 6 tail spikes for 1 damage each  
-**Special**: Can fly. Has 24 tail spikes and can shoot up to 6 of them per round, even while flying.
-
-### Evil Wizard
-**Hit Points**: 7  
-**Special**: 3 actions per round  
-**Spells**:
-- *Levitate*
-- *Magic Bolt* (4 bolts for 1 damage each)
-- *Sleep* (up to 4 targets, save or fall asleep)
-- *Animate Carrion* (raise 1-6 animal skeleton minions)
-- *Hold* (1 target, save or frozen/paralyzed).
-
-Can cast each spell once per day.
-
-## Converting a D&D Monster
+# Converting a D&D Monster
 To convert a classic D&D monster, use the number of Hit Dice as an approximation of hit points. Record the number of attacks and damage. As a general guideline, take the average damage of the attacks and have them deal 1 hit point of damage for every 5 points.
 
 | D&D Average Damage | Damage Conversion |

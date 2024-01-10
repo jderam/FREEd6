@@ -1,60 +1,13 @@
 # Magic
 
-## Sorcery
-Characters having the **Sorcery** extraordinary ability may attempt to cast a spell they know as an action. Make a d66 roll and look up the result on the Spell Check Chart below to determine the result.
+## Wizardry
+Characters having the **Wizardry** extraordinary ability know three randomly-determined
+spells from the spell list. They may cast each of the spells they know once per day as
+an action. A character can get the **Wizardry** extraordinary ability multiple times,
+gaining three additional new spells each time.
 
-### Spell Check Chart
-| d66 Roll | Result |
-|:--------:|--------|
-| 11       | Spell fails and the caster suffers a corruption. Roll on the corruption chart. |
-| 12-46    | Spell is successful, but cannot be cast again that day. |
-| 51-65    | Spell is successful, and may be cast again. |
-| 66       | Critical success! Spell has some aspect of its effect doubled (damage, number of creatures affected, duration, etc.) |
+### Spell List
 
-**Alternative Option**: Instead of requiring spell checks, spells are always successful but cost 1 hit point to cast.
-
-### Corruption Chart [Under Construction]
-| d66 Roll | Result |
-|:--------:|--------|
-| 11 |  |
-| 12 |  |
-| 13 |  |
-| 14 |  |
-| 15 |  |
-| 16 |  |
-| 21 |  |
-| 22 |  |
-| 23 |  |
-| 24 |  |
-| 25 |  |
-| 26 |  |
-| 31 |  |
-| 32 |  |
-| 33 |  |
-| 34 |  |
-| 35 |  |
-| 36 |  |
-| 41 |  |
-| 42 |  |
-| 43 |  |
-| 44 |  |
-| 45 |  |
-| 46 |  |
-| 51 |  |
-| 52 |  |
-| 53 |  |
-| 54 |  |
-| 55 |  |
-| 56 |  |
-| 61 |  |
-| 62 |  |
-| 63 |  |
-| 64 |  |
-| 65 |  |
-| 66 |  |
-
-### Spells List
-NOTE: `L` = the spellcaster's level
 | d66 Roll | Spell |
 |:--------:|-------|
 | 11 | **Arcane Eye**: You can see through a magical floating eyeball that flies around at your command. |
@@ -94,8 +47,14 @@ NOTE: `L` = the spellcaster's level
 | 65 | **Web**: Your wrists can shoot thick webbing. |
 | 66 | **X-Ray Vision**: You gain X-Ray vision. |
 
+**NOTE**: `L` = the spellcaster's level  
+
+The above spells derived from [**Knave** by Ben Milton](https://www.drivethrurpg.com/product/250888/Knave),
+used under the
+[Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
+
 ## Read Magic
-The **Read Magic** extraordinary ability allows an adventurer to read arcane or magical writing, which makes it possible to cast a spell from a scroll. Spellcasting from scrolls is much more reliable than casting a spell from memory, so no spell check is required. The spell always works, but the scroll is consumed once the spell is cast. When the **Read Magic** ability is gained, the adventurer gets two randomly determined scrolls to add to their inventory. Additional scrolls may be found during play.
+The **Read Magic** extraordinary ability allows an adventurer to read arcane or magical writing, which makes it possible to cast a spell from a scroll. The spell always works, but the scroll is consumed once the spell is cast. When the **Read Magic** ability is gained, the adventurer gets two randomly determined scrolls to add to their inventory. Additional scrolls may be found during play.
 
 ### Scrolls [Under Construction]
 
