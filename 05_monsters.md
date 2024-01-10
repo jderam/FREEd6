@@ -9,23 +9,31 @@ Some examples are provided here.
 ### Gremlin
 - **Hit Points**: 1
 - **Actions**: 1 move, 1 attack
-- **Special**: Gremlins get advantage on combat checks when more than one of them are
-attacking the same target.
+- **Special**:
+  - **Swarm Tactics**: Gremlins have advantage on combat checks against a target when one or more additional gremlins are adjacent to the target.
 
 ### Bear
 - **Hit Points**: 8
 - **Actions**: 1 move, 3 attacks (claw/claw/bite)
+- **Skills**:
+  - Muscle
 
 ### Giant
 - **Hit Points**: 12
 - **Actions**: 1 move, 2 fist smash (2) OR 1 hurl boulder (1d6)
+- **Skills**:
+  - Muscle
 
 ### Manticore
 - **Hit Points**: 6
 - **Actions**: 1 move, Claw/Claw/Bite (1) OR 6 tail spikes (1)
 - **Special**:
-  - Can fly.
-  - Has 24 tail spikes and can shoot up to 6 of them per round, even while flying.
+  - **Flying**
+  - **Tail Spikes**: A manticore has 24 tail spikes and can shoot up to 6 of them per round, even while flying.
+
+### Evil Warrior
+- **Hit Points**: 3
+- **Actions**: 1 move, 2 attacks
 
 ### Evil Wizard
 - **Hit Points**: 7
