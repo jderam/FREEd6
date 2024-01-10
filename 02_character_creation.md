@@ -6,7 +6,7 @@ New characters begin play at level 1 with the following. Record all information 
 4. Record equipment from the [Base Equipment Pack](#base-equipment-pack).
 5. Roll for one [Wearable Item](#wearble-items).
 6. Roll for one item from each of the **Misc Items** charts ([A](#misc-items-a), [B](#misc-items-b), and [C](#misc-items-c)).
-7. Roll for a starting [Weapon](#weapons).
+7. Roll for or select a starting [Weapon](#weapons).
 8. Roll 3d6 to determine how many silver pieces (sp) you begin play with.
 9. Name your character.
 10. (Optional) Add any interesting details about your character's appearance, background, or mannerisms. You may wish to create a sketch of your character as well.
