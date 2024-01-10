@@ -13,8 +13,10 @@ New characters begin play at level 1 with the following. Record all information 
 
 ## Skills
 Below are the various skills and the summaries of their respective uses.
-When you have one of these skills, you only need a 4+ on your check in order to succeed,
-whereas a character without the skill would need a 5+.
+When you have one of these skills, you only need a 4+ on related checks in order to succeed,
+whereas a character without the skill would need a 5+. Note that absence of a skill does not
+mean a character is unable to attempt to perform actions related to that skill. It only means
+they would not get the improved chance at success that haivng a skill grants.
 
 ##### (1-3)
 1. **Dungeoneering**: Navigate dungeons and caves, detect grades and slopes, identify subterranean creatures.
