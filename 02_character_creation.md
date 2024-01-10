@@ -11,20 +11,6 @@ New characters begin play at level 1 with the following. Record all information 
 9. Name your character.
 10. (Optional) Add any interesting details about your character's appearance, background, or mannerisms. You may wish to create a sketch of your character as well.
 
-## Character Advancement
-For each adventure completed (or whatever milestone the GM determines appropriate), the
-character gains a level. Roll on the **Advancement Table** below to determine what benefit is gained.
-Note that characters will generally gain more power from magic items and artifacts acquired on their
-adventures than they will from advancing though levels, but they will gain notoriety in
-the world based on their level.
-
-### Advancement Table
-| d6 Roll | Benefit |
-|:-------:|---------|
-| 1-3     | Gain 1 hit point |
-| 4-5     | Gain a Skill |
-| 6       | Gain an Extraordinary Ability |
-
 ## Skills
 Below are the various skills and the summaries of their respective uses.
 When you have one of these skills, you only need a 4+ on your check in order to succeed,
@@ -136,3 +122,17 @@ These are unique abilities an adventurer can perform that are generally not poss
 4. Javelins, sheaf of 6
 5. Shuriken, bandolier of 12
 6. Sling, pouch of 12 stones
+
+## Character Advancement
+For each adventure completed (or whatever milestone the GM determines appropriate), the
+character gains a level. Roll on the **Advancement Table** below to determine what benefit is gained.
+Note that characters will generally gain more power from magic items and artifacts acquired on their
+adventures than they will from advancing though levels, but they will gain notoriety in
+the world based on their level.
+
+### Advancement Table
+| d6 Roll | Benefit |
+|:-------:|---------|
+| 1-3     | Gain 1 hit point |
+| 4-5     | Gain a Skill |
+| 6       | Gain an Extraordinary Ability |
