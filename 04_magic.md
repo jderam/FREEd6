@@ -49,7 +49,7 @@ gaining three additional new spells each time.
 
 **NOTE**: `L` = the spellcaster's level  
 
-The above spells derived from [**Knave** by Ben Milton](https://preview.drivethrurpg.com/en/product/250888/Knave),
+The above spells derived from [**Knave** by Ben Milton](https://www.drivethrurpg.com/product/250888/Knave),
 used under the
 [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
 
