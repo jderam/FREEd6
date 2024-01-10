@@ -1,21 +1,24 @@
 # Character Creation
 New characters begin play at level 1 with the following. Record all information on a sheet of paper.
 1. You begin play with 3 hit points.
-2. Roll for or select 2 [Skills](#skills).
-3. Roll for or select 1 [Extraordinary Ability](#extraordinary-abilities).
+2. Roll for or select two [Skills](#skills).
+3. Roll for or select one [Extraordinary Ability](#extraordinary-abilities).
 4. Record equipment from the [Base Equipment Pack](#base-equipment-pack).
-5. Roll for 1 [Wearable Item](#wearble-items).
-6. Roll for 1 item from each of the **Misc Items** charts ([A](#misc-items-a), [B](#misc-items-b), and [C](#misc-items-c)).
+5. Roll for one [Wearable Item](#wearble-items).
+6. Roll for one item from each of the **Misc Items** charts ([A](#misc-items-a), [B](#misc-items-b), and [C](#misc-items-c)).
 7. Roll for a starting [Weapon](#weapons).
 8. Roll 3d6 to determine how many silver pieces (sp) you begin play with.
 9. Name your character.
 10. (Optional) Add any interesting details about your character's appearance, background, or mannerisms. You may wish to create a sketch of your character as well.
 
 ## Character Advancement
-For each adventure completed, the character gains a level. 
-Note that characters will generally gain more power from magic items and artifacts acquired on their adventures than they will from advancing though levels, but they will gain automatic street cred in the world based on their level.
+For each adventure completed (or whatever milestone the GM determines appropriate), the
+character gains a level. Roll on the **Advancement Table** below to determine what benefit is gained.
+Note that characters will generally gain more power from magic items and artifacts acquired on their
+adventures than they will from advancing though levels, but they will gain notoriety in
+the world based on their level.
 
-### ADVANCEMENT CHART
+### Advancement Table
 | d6 Roll | Benefit |
 |:-------:|---------|
 | 1-3     | Gain 1 hit point |
@@ -52,15 +55,20 @@ These are unique abilities an adventurer can perform that are generally not poss
 3. **Berserks Mode**: You may choose to enter a berserker rage, which lasts until the end of a combat. All attacks are made with disadvantage, but deal double damage on a hit.
 4. **Cantraps**: Produce minor, non-damaging magical effects at will.
 5. **Diehard**: The first time you fall to 0 hit points in a given day, you immediately gain 1 hit point back and don't lose consciousness.
-6. **Healing**: As an action, you can make a check to heal an ally other than yourself. On a success, the target creature is healed for 2 hit points. Alternatively, this ability can also be used to cure poison, disease, and other physical ailments that are non-magical. You must touch the recipient to perform the healing.
+6. **Healing**: As an action, you can make a check to heal an ally other than yourself. On a success, the target creature is healed for 2 hit points. Alternatively, this ability can also be used to cure poison, disease, and other physical ailments that are non-magical. You must touch the recipient to perform the healing, which is limited to once per day per character.
 
 ##### (3-6)
-1. **Read Magic**: Ability to discern arcane writing and cast spells from scrolls. When this ability is gained, the character also gains two randomly determined scrolls (see [**Magic**](04_magic.md)).
-2. **Repel Undead**: On a successful check, you add the total of the two dice and turn away that many hit points of undead creatures. May be attempted once per combat.
-3. **Vigilant**: Whenever your side loses initiative, make a check. If the check is successful, you act first.
-4. **Wizardry**: Knowledge of and ability to cast three randomly determined spells (see [**Magic**](04_magic.md)). This ability may be taken multiple times, and three additional random spells are learned each time.
-5. **Perceptive**: You have a chance to notice secret doors or other important yet subtle clues that others would miss. The GM needs to make the checks for this, and may need to be reminded from time to time that you have this ability.
-6. `# TODO: Add another Extraordinary Ability`
+1. **Perceptive**: You have a chance to notice secret doors or other important yet subtle clues that others would miss. The GM needs to make the checks for this, and may need to be reminded from time to time that you have this ability.
+2. **Read Magic**: Ability to discern arcane writing and cast spells from scrolls. When this ability is gained, the character also gains two randomly determined scrolls (see [**Magic**](04_magic.md)).
+3. **Repel Undead**: On a successful check, you add the total of the two dice and turn away that many hit points of undead creatures. May be attempted once per combat.
+4. **Vigilant**: Whenever your side loses initiative, make a check. If the check is successful, you act first.
+5. **Weapon Training**: You make combat checks with skill for a specific weapon group.
+    1. Unarmed
+    2. Light Melee
+    3. Heavy Melee
+    4. Ranged
+6. **Wizardry**: Knowledge of and ability to cast three randomly determined spells (see [**Magic**](04_magic.md)). This ability may be taken multiple times, and three additional random spells are learned each time.
+
 
 ## Equipment
 
@@ -84,8 +92,8 @@ These are unique abilities an adventurer can perform that are generally not poss
 2. Flask of acid
 3. Pouch of marbles
 4. Ball of twine (100')
-5. Flask of oil
-6. `# TODO: Add another item`
+5. Flask of oil (2)
+6. Molotov cocktail
 
 #### Misc Items B
 1. Prybar
