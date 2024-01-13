@@ -14,7 +14,7 @@ A rules-light tabletop roleplaying game by Jeremy Deram.
 - B. [Experimental/Optional Rules](appendix_b_experimental_optional_rules.md)
 
 ### Online Character Generator
-https://jderam.github.io/hyperborea3-frontend/d666-chargen?level=1&name=auto
+https://jderam.github.io/d666-system/chargen.html?level=1&name=auto
 
 Edit query parameters in the url as follows:
 - Update `level` to generate a character of a higher level, e.g. `level=5`
