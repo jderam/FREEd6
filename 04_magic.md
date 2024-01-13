@@ -58,7 +58,7 @@ The **Read Magic** extraordinary ability allows an adventurer to read arcane or 
 
 ### Scrolls [Under Construction]
 
-##### (1-2)
+##### (1-3)
 1. Scroll 1
 2. Scroll 2
 3. Scroll 3
@@ -66,15 +66,7 @@ The **Read Magic** extraordinary ability allows an adventurer to read arcane or 
 5. Scroll 5
 6. Scroll 6
 
-##### (3-4)
-1. Scroll 1
-2. Scroll 2
-3. Scroll 3
-4. Scroll 4
-5. Scroll 5
-6. Scroll 6
-
-##### (5-6)
+##### (4-6)
 1. Scroll 1
 2. Scroll 2
 3. Scroll 3
