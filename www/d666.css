@@ -1,0 +1,113 @@
+/* font-family: 'Press Start 2P', system-ui; */
+
+/* font-family: 'Roboto', sans-serif; */
+
+/* font-family: 'Rubik Glitch', system-ui; */
+
+.container {
+    display: grid;
+    grid-gap: 0px;
+    grid-template-columns: 1fr 816px 1fr;
+}
+
+.center-col {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(30, auto);
+}
+
+.item {
+    padding: 2px;
+    margin: 4px;
+    margin-bottom: 8px;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    font-size: medium;
+}
+
+.banner {
+    grid-column: 1 / span 12;
+    font-family: 'Rubik Glitch', system-ui;
+    font-size: 72px;
+    text-align: center;
+}
+
+.index-body {
+    grid-column: 5 / span 4;
+}
+
+.name {
+    grid-column: 1 / span 7;
+    font-size: xx-large;
+}
+
+.level {
+    grid-column: 8 / span 2;
+    font-size: x-large;
+}
+
+.hit-points {
+    grid-column: 10 / span 3;
+    font-size: x-large;
+}
+
+.background {
+    grid-column: 1 / span 5;
+}
+
+.skills {
+    grid-column: 1 / span 5;
+}
+.skills ul {
+    margin-top: 4px;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.extraordinary-abilities {
+    grid-column: 1 / span 5;
+}
+.extraordinary-abilities ul {
+    margin-top: 4px;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.weapon {
+    grid-column: 1 / span 5;
+}
+.weapon ul {
+    margin-top: 4px;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.equipment {
+    grid-column: 1 / span 5;
+}
+.equipment ul {
+    margin-top: 4px;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.money {
+    grid-column: 1 / span 5;
+}
+
+.spells {
+    grid-column: 1 / span 5;
+}
+.spells ul {
+    margin: 4px;
+    padding-left: 4px;
+    list-style-type: circle;
+}
+.spells li {
+    font-size: small;
+    margin: 4px;
+}

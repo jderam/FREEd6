@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>d666 Character Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@300;400&family=Rubik+Glitch&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="d666.css">
+</head>
+<body>
+    <!-- VUE -->
+    <script src="https://unpkg.com/vue@3.4.0/dist/vue.global.prod.js"></script>
+    <!-- <template> -->
+    <div id="app" class="container">
+        <div class="left-col"></div>
+        <div class="center-col">
+            <div class="item banner">
+                <img src="img/3d6.jpg" height="74px" style="transform: scaleX(-1);">
+                &nbsp;&nbsp;
+                d666
+                &nbsp;&nbsp;
+                <img src="img/3d6.jpg" height="74px">
+            </div>
+            <div class="item name"><b>Name</b>: {{ pc.name }}</div>
+            <div class="item level"><b>Level</b>: {{ pc.level }}</div>
+            <div class="item hit-points"><b>Hit Points</b>: {{ pc.hit_points }}</div>
+            <div class="item background"><b>Background</b>: {{ pc.background }}</div>
+            <div class="item skills"><b><u>Skills</u></b>
+                <ul>
+                    <li v-for="sk in skArray">{{ sk }}</li>
+                </ul>
+            </div>
+            <div class="item extraordinary-abilities"><b><u>Extraordinary Abilities</u></b>
+                <ul>
+                    <li v-for="ea in eaArray">{{ ea }}</li>
+                </ul>
+            </div>
+            <div class="item weapon"><b><u>Weapons</u></b>
+                <ul>
+                    <li>{{ pc.weapon }}</li>
+                </ul>
+            </div>
+            <div class="item equipment"><b><u>Equipment</u></b>
+                <ul>
+                    <li v-for="e in pc.equipment">{{ e }}</li>
+                </ul>
+            </div>
+            <div class="item money">
+                <b>Money</b>: {{ pc.money }}
+            </div>
+            <div class="item spells" v-if="pc.has_wizardry">
+                <b><u>Spells</u></b>
+                <ul>
+                    <li v-for="s in pc.spells"><b>{{ Object.keys(s)[0] }}</b>: {{ Object.values(s)[0] }}</li>
+                </ul>
+            </div>
+        </div>
+        <div class="right-col"></div>
+    </div>
+    <!-- </template> -->
+    <script>
+        const app = Vue.createApp({
+            data() {
+                return {
+                    pc: {},
+                    levels: [1,2,3,4,5,6,7,8,9],
+                    selectedLevel: 1,
+                    generateName: false,
+                    manualName: ""
+                }
+            },
+            computed: {
+                skArray() {
+                    let skillKeys = this.pc.skills.map((sk) => {
+                        return Object.keys(sk)[0];
+                    });
+                    skillKeys.sort();
+                    return skillKeys;
+                },
+                eaArray() {
+                    let eaKeys = this.pc.extraordinary_abilities.map((ea) => {
+                        return Object.keys(ea)[0];
+                    });
+                    eaKeys.sort();
+                    return eaKeys;
+                }
+            },
+            methods: {
+                async getPlayerCharacter() {
+                    let url = `https://rpg-tools.onrender.com/rpg-tools/d666?level=${this.selectedLevel}`;
+                    console.log(`url: ${url}`);
+                    let response = await fetch(url);
+                    if (response.ok) {
+                        let pc = await response.json();
+                        this.pc = pc;
+                        console.log(`pc: ${JSON.stringify(this.pc)}`);
+                    } else {
+                        alert("HTTP-Error: " + response.status);
+                    }
+                    if (this.generateName) {
+                        this.getName();
+                    } else if (this.manualName != "") {
+                        this.pc.name = this.manualName;
+                    }
+                },
+                async getName() {
+                    let url = `https://rpg-tools.onrender.com/rpg-tools/zothique-names`;
+                    console.log(`url: ${url}`);
+                    let response = await fetch(url);
+                    if (response.ok) {
+                        let name = await response.json();
+                        console.log(`name: ${JSON.stringify(name)}`);
+                        this.pc.name = name;
+                    } else {
+                        alert("HTTP-Error: " + response.status);
+                    }
+                }
+            },
+            created() {
+                console.log('created');
+                let urlParams = new URLSearchParams(window.location.search);
+                console.log(urlParams.has('level')); // true
+                console.log(urlParams.get('level')); // "level"
+                if (urlParams.has('level')) {
+                    this.selectedLevel = urlParams.get('level');
+                } else {
+                    this.selectedLevel = 1;
+                }
+                console.log(urlParams.has('name'));
+                console.log(urlParams.get('name'));
+                if (urlParams.has('name') && urlParams.get('name') === 'auto') {
+                    this.generateName = urlParams.get('name');
+                } else if (urlParams.has('name') && urlParams.get('name') !== 'auto') {
+                    this.manualName = urlParams.get('name');
+                } else {
+                    this.generateName = false;
+                }
+                this.getPlayerCharacter();
+            },
+            unmounted() {
+                console.log('unmounted');
+            }
+        })
+        app.mount('#app');
+    </script>
+</body>
+</html>
