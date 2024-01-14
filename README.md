@@ -13,12 +13,12 @@ A rules-light tabletop roleplaying game by Jeremy Deram.
 5. [Monsters](rules/05_monsters.md)
 6. [Treasures](rules/06_treasures.md)
 
-### Appendices
+#### Appendices
 - A. [Converting Classic Monsters](rules/appendix_a_converting_monsters.md)
 - B. [Optional Rules](rules/appendix_b_optional_rules.md)
 
-### Online Character Generator
-[https://jderam.github.io/d666-system/html/chargen.html?level=1&name=auto](https://jderam.github.io/d666-system/html/chargen.html?level=1&name=auto)
+## Online Character Generator
+[`https://jderam.github.io/d666-system/html/chargen.html?level=1&name=auto`](https://jderam.github.io/d666-system/html/chargen.html?level=1&name=auto)
 
 Edit query parameters in the url as follows:
 - Update `level` to generate a character of a higher level, e.g. `level=5`
@@ -29,18 +29,6 @@ Edit query parameters in the url as follows:
 
 ## License
 This game is released under the [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/) (CC BY-SA 4.0)
-
-### You are free to:
-- **Share** — copy and redistribute the material in any medium or format for any purpose, even commercially.
-- **Adapt** — remix, transform, and build upon the material for any purpose, even commercially.
-
-The licensor cannot revoke these freedoms as long as you follow the license terms.
-
-### Under the following terms:
-- **Attribution** — You must give appropriate credit , provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
-- **ShareAlike** — If you remix, transform, or build upon the material, you must distribute your contributions under the same license as the original.
-
-**No additional restrictions** — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.
 
 
 ⚀ ⚁ ⚂ ⚃ ⚄ ⚅
