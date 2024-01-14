@@ -1,24 +1,38 @@
 # How to Play
 
 ## The Core Mechanic
-**The d666 System** uses only standard 6-sided dice. Each player will need three dice.
+**The d666 System** uses only standard six-sided dice. Each player will need three dice.
 Any time a character wants to attempt something where the GM determines success wouldn't be automatic, a *check* may be called for. Under most circumstances, a *check* is made on two dice, and if either die comes up 5 or higher, the *check* is considered successful.
 
-The most common exception to this is if the character has a **skill** that applies to the *check*. In this case, if either die comes up 4 or higher, the *check* is considered successful.
+However, if the character has a **skill** that applies to the *check*, the *check* is considered successful
+if either die comes up 4 or higher.
 
 ## Situational Adjustments
 Sometimes an aspect of the situation will grant a character *advantage* or *disadvantage* on their *check*. For example, a character trying to sneak past a guard that is asleep would have *advantage* on their *check* to move past unnoticed, while a character attempting to shoot an enemy from a great distance would have *disadvantage* on their *check*.
 - **Advantage**: Check is made with three dice instead of two.
 - **Disadvantage**: Check is made with one die instead of two.
 
+## Other Rolls
+### 1d6/2d6/3d6
+Roll one, two, or three dice and take the sum.
+
+### d66
+Roll two dice. The leftmost is the tens digit and the other is the ones digit.
+This results in 36 possibilities, between 11 and 66.
+
+### d666
+Roll three dice. Evaluate them from left to right as the hundreds digit, the tens digit,
+and the ones digit. This results in 216 possibilities, between 111 and 666.
+
 ## Combat
 Combat is fast and easy. Follow these steps.
 1. When a combat breaks out, start by rolling initiative. Two dice are rolled for each side and the totals are compared. The side with the highest roll acts first. Tied initiative rolls indicate simultaneous combat, and everyone gets to act, even if they are killed.
 2. On a player's turn, a character can perform two actions. Examples:
-    - Move in to engage an enemy and make an attack with a melee weapon
-    - Cast a spell at an enemy, then move behind a rock in an attempt to avoid being shot by arrows
-    - Cover a great distance by using both actions to move
-    - Make two melee attacks against an enemy that is already in melee range
+    - **Move** in to engage an enemy and **attack** them with a melee weapon
+    - **Cast a spell** at an enemy, then **move** behind a rock in an attempt to avoid being shot by arrows
+    - Cover a great distance by using both actions to **move**
+    - Make two melee **attacks** against an enemy that is already in melee range
+    - **Move** to an ally and **help** them, which grants them advantage on their check to do the thing you are helping them do
 3. Under normal circumstances, each successful attack deals 1 point of damage. Record damage taken as it occurs.
 4. Once all characters and monsters have had their turn, the combat round is over, and starts again at the beginning. Initiative is rolled anew at the beginning of each round. This continues until one side is defeated, retreats, or surrenders.
 

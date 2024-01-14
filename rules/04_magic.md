@@ -52,11 +52,27 @@ gaining three additional new spells each time.
 The above spells derived from [**Knave** by Ben Milton](https://www.drivethrurpg.com/product/250888/Knave),
 used under the
 [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
+They are mostly copied wholesale, but some spell descriptions may have been edited to better fit the mechanics of this game.
 
 ## Read Magic
 The **Read Magic** extraordinary ability allows an adventurer to read arcane or magical writing, which makes it possible to cast a spell from a scroll. The spell always works, but the scroll is consumed once the spell is cast. When the **Read Magic** ability is gained, the adventurer gets two randomly determined scrolls to add to their inventory. Additional scrolls may be found during play.
 
 ### Scrolls [Under Construction]
+
+| d66 Roll | Scroll |
+|:--------:|--------|
+| 1-3.1    |        |
+| 1-3.2    |        |
+| 1-3.3    |        |
+| 1-3.4    |        |
+| 1-3.5    |        |
+| 1-3.6    |        |
+| 4-6.1    |        |
+| 4-6.2    |        |
+| 4-6.3    |        |
+| 4-6.4    |        |
+| 4-6.5    |        |
+| 4-6.6    |        |
 
 ##### (1-3)
 1. Scroll 1
@@ -74,4 +90,4 @@ The **Read Magic** extraordinary ability allows an adventurer to read arcane or 
 5. Scroll 5
 6. Scroll 6
 
-**Suggestion**: Use the spells from Wonder & Wickedness by Brenden Strejcek for scrolls.
+**Suggestion**: Use the spells from [Wonder & Wickedness by Brenden Strejcek](https://www.drivethrurpg.com/product/145647/Wonder--Wickedness) for scrolls.
