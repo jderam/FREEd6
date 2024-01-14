@@ -15,7 +15,7 @@ A rules-light tabletop roleplaying game by Jeremy Deram.
 
 ### Appendices
 - A. [Converting Classic Monsters](rules/appendix_a_converting_monsters.md)
-- B. [Experimental/Optional Rules](rules/appendix_b_experimental_optional_rules.md)
+- B. [Optional Rules](rules/appendix_b_optional_rules.md)
 
 ### Online Character Generator
 [https://jderam.github.io/d666-system/html/chargen.html?level=1&name=auto](https://jderam.github.io/d666-system/html/chargen.html?level=1&name=auto)
