@@ -12,6 +12,12 @@ Some examples are provided here.
 - **Special**:
   - **Swarm Tactics**: Gremlins have advantage on combat checks against a target when one or more additional gremlins are adjacent to the target.
 
+### Killer Frog
+- **Hit Points**: 4
+- **Actions**: 1 move, 1 attack
+- **Special**:
+  - **Swallow**: The killer frog shoots its tongue up to 15 feet to grab a target and swallow it. The target takes 1 damage immediately, and again on each of its turns until it escapes or the frog is defeated.
+
 ### Bear
 - **Hit Points**: 8
 - **Actions**: 1 move, 3 attacks (claw/claw/bite)
