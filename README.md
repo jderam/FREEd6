@@ -1,4 +1,4 @@
-# ⚅⚅⚅ The d666 System ⚅⚅⚅
+# ⚅⚅⚅ The d666 RPG System ⚅⚅⚅
 
 A rules-light tabletop roleplaying game by Jeremy Deram.
 
