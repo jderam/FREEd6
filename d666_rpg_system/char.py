@@ -135,7 +135,7 @@ class D666Character:
             money += random.randint(1, 6)
         return money
 
-    def to_dict(self):
+    def as_dict(self):
         return self.__dict__
 
 
@@ -145,4 +145,4 @@ if __name__ == "__main__":
     level = random.randint(1, 9)
     print(f"{level = }")
     character = D666Character(level=level)
-    pprint(character.to_dict())
+    pprint(character.as_dict())
