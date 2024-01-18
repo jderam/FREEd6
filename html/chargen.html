@@ -90,7 +90,7 @@
             },
             methods: {
                 async getPlayerCharacter() {
-                    let url = `https://rpg-tools.onrender.com/rpg-tools/d666?level=${this.selectedLevel}`;
+                    let url = `https://rpg-tools.onrender.com/d666/char?level=${this.selectedLevel}`;
                     console.log(`url: ${url}`);
                     let response = await fetch(url);
                     if (response.ok) {
