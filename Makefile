@@ -28,7 +28,7 @@ deploy_prod: ## run all checks, build dist files, upload to prod pypi
 	rm -f dist/*
 	python -m build
 	twine check dist/*
-	twine upload --repository pypi dist/*
+	twine upload --repository account dist/*
 
 install_wheel: ## pip install this package
 	python -m pip install dist/d666_rpg_system-*-py3-none-any.whl --force-reinstall
