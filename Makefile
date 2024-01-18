@@ -21,14 +21,14 @@ deploy_test: ## run all checks, build dist files, upload to test pypi
 	rm -f dist/*
 	python -m build
 	twine check dist/*
-	twine upload --repository hyperborea3test dist/*
+	twine upload --repository testpypi dist/*
 
 deploy_prod: ## run all checks, build dist files, upload to prod pypi
 	ruff check .
 	rm -f dist/*
 	python -m build
 	twine check dist/*
-	twine upload --repository hyperborea3prod dist/*
+	twine upload --repository pypi dist/*
 
 install_wheel: ## pip install this package
 	python -m pip install dist/d666_rpg_system-*-py3-none-any.whl --force-reinstall
