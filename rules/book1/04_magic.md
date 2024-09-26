@@ -6,6 +6,14 @@ spells from the spell list. They may cast each of the spells they know once per 
 an action. A character can get the **Wizardry** extraordinary ability multiple times,
 gaining three additional new spells each time.
 
+In the following spell descriptions, **L** is a number equal to the caster's level,
+an **item** is an object able to be lifted with one hand, and an
+**object** is anything up to human size. Unless otherwise noted, all
+spells with ongoing effects last up to L×10 minutes, and have a range
+of up to 40 feet. If a spell directly affects another creature, the
+creature may make a saving throw to avoid it. Success reduces or negates the
+spell's effects.
+
 ### Spell List
 
 | d66 Roll | Spell |
