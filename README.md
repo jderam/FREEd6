@@ -1,4 +1,4 @@
-# ⚅⚅⚅ The d666 RPG System ⚅⚅⚅
+# ⚅⚅⚅ The FREEd6 RPG System ⚅⚅⚅
 
 A rules-light tabletop roleplaying game by Jeremy Deram.
 
@@ -18,7 +18,7 @@ A rules-light tabletop roleplaying game by Jeremy Deram.
 - B. [Optional Rules](rules/book3/appendix_b_optional_rules.md)
 
 ## Online Character Generator
-[`https://jderam.github.io/d666-rpg-system/html/chargen.html?level=1&name=auto`](https://jderam.github.io/d666-rpg-system/html/chargen.html?level=1&name=auto)
+[`https://jderam.github.io/FREEd6/html/chargen.html?level=1&name=auto`](https://jderam.github.io/FREEd6/html/chargen.html?level=1&name=auto)
 
 Edit query parameters in the url as follows:
 - Update `level` to generate a character of a higher level, e.g. `level=5`
