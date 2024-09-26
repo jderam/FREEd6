@@ -81,3 +81,20 @@ taking damage will be defended against by the target.
   - Automatically fails saving throws
   - Combat checks against have advantage
   - If you begin your turn stunned, the only thing you can do is make a check. If successful, you are no longer stunned and may act normally beginning on your next turn.
+
+## Extraordinary Ability: Psionics
+The character has a psionic ability which may be used up to thrice per day.
+At the beginning of each day, roll on the following chart 1d3 times to
+determine what powers are available that day.
+
+| d66 roll | Psionic Power |
+|:--------:|---------|
+| 11-14 | **CLAIRAUDIENCE**: The user can hear through solid obstacles. A 2′ thickness of solid stone blocks the spell, as does even the thinnest layer of lead. Range: 60′ Duration: 2 hours |
+| 15-22 | **CLAIRVOYANCE**: The user can see through solid obstacles. A 2′ thickness of solid stone blocks the spell, as does even the thinnest layer of lead. Range: 60′ Duration: 2 hours |
+| 23-26 | **ESP**: The user can detect the thoughts of other beings. The spell cannot penetrate more than two feet of stone, and it is blocked by even a thin sheet of lead. Range: 60′ Duration: 2 hours |
+| 31-34 | **MIND BLAST**: This attack of pure mental energy causes 3 dice of damage. Creatures possessing psionic powers can save vs. magic to avoid the damage. |
+| 35-42 | **MIND CONTROL**: The unfortunate victim of this ability falls under the user's influence (Range: 120′). This psionic power can work on any intelligent creature for as long as the user intensely concentrates (no fighting or even walking). A saving throw vs. magic negates the effect. Animals are immune, as are the Old Ones. Attempting to mind control one of the Old Ones will cause the user to fall unconscious for a number of hours (roll a single die to determine how many) unless he makes a saving throw vs. breath weapon. |
+| 43-46 | **PRECOGNITION**: This allows the user to tell what will happen only to himself if he were to do something. No more than 1 minute into the future can be seen. |
+| 51-54 | **TELEKINESIS**: The user can move objects using mental power alone. The amount of weight he can lift and move is 20 pounds per level. Range: 120′ Duration: 1 hour |
+| 55-62 | **TELEPATHY**: Direct mind-to-mind communication with intelligent beings, transcending language. Telepathic contact with an Old One is foolish, and the Referee will probably require a saving throw to avoid madness and/or horror. |
+| 63-66 |
