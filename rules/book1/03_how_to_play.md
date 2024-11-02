@@ -1,7 +1,7 @@
 # How to Play
 
 ## The Core Mechanic
-**The d666 System** uses only standard six-sided dice. Each player will need three dice.
+**The FREEd6 RPG System** uses only standard six-sided dice. Each player will need three dice.
 Any time a character wants to attempt something where the GM determines success wouldn't be automatic, a *check* may be called for. Under most circumstances, a *check* is made on two dice, and if either die comes up 5 or higher, the *check* is considered successful.
 
 However, if the character has a **skill** that applies to the *check*, the *check* is considered successful
