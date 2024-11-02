@@ -1,3 +1,3 @@
-from d666_rpg_system.data import SPELLS
+from free_d6.data import SPELLS
 
 print(f"spells count: {len(SPELLS)}")

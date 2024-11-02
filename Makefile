@@ -5,8 +5,8 @@ OS := $(shell uname)
 
 .PHONY: help build_and_test build_wheel clean deploy_test deploy_prod pip_install pip_install_dev test check mypy_check compile_req install create_venv rebuild_venv run_test_uvicorn
 
-PYENV_VERSION=3.11.7
-VENV_NAME=d666-rpg-system
+PYENV_VERSION=3.13.0
+VENV_NAME=FREEd6
 
 build_and_test: clean build_wheel pip_install test ## Build wheel, install, and execute tests
 
@@ -31,7 +31,7 @@ deploy_prod: ## run all checks, build dist files, upload to prod pypi
 	twine upload --repository account dist/*
 
 install_wheel: ## pip install this package
-	python -m pip install dist/d666_rpg_system-*-py3-none-any.whl --force-reinstall
+	python -m pip install dist/free_d6-*-py3-none-any.whl --force-reinstall
 
 test: ## Run pytest tests
 	python -m pytest --cov-report term-missing tests/

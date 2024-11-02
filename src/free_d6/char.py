@@ -1,7 +1,7 @@
 import random
 from typing import Dict, List
 
-from d666_rpg_system.data import (
+from free_d6.data import (
     SKILLS,
     EXTRAORDINARY_ABILITIES,
     BACKGROUNDS,
@@ -17,15 +17,12 @@ from d666_rpg_system.data import (
 )
 
 
-class D666Character:
+class Character:
     """Yeah."""
 
-    def __init__(self, level: int = 1) -> None:
+    def __init__(self, level: int = 0) -> None:
         self.name: str = ""
         self.level: int = level
-        self.hit_points: int = 3
-        self.skills_count: int = 2
-        self.extraordinary_abilities_count: int = 1
         self.level_abilities()
         self.skills: List[Dict[str, str]] = self.get_skills()
         self.extraordinary_abilities: List[Dict[str, str]] = self.get_extraordinary_abilities()
@@ -33,31 +30,42 @@ class D666Character:
         self.weapon: str = self.get_weapon()
         self.equipment: List[str] = self.get_equipment()
         self.background: str = self.get_background()
-        self.spells: List[Dict[str, str]] = self.get_spells()
+        # self.spells: List[Dict[str, str]] = self.get_spells()
         self.money: str = self.get_money()
 
     def level_abilities(self):
-        """For each level above 1st, get additional hp, skills, or extraordinary abilities."""
-        level_ups = ["hp", "sk", "ea"]
-        for _ in range(self.level - 1):
-            level_up = random.choices(level_ups, weights=[3, 2, 1])[0]
-            if level_up == "hp":
-                self.hit_points += 1
-            elif level_up == "sk":
-                self.skills_count += 1
-            elif level_up == "ea":
-                self.extraordinary_abilities_count += 1
-            else:
-                raise Exception(f"Unexpected value for level_up: {level_up}")
+        """Calculate number of hit points, skills, and extraordinary abilities based on level."""
+        if self.level == 0:
+            self.hit_points = 2
+            self.sk_count = 1
+            self.ea_count = 0
+        else:
+            # level 1
+            self.hit_points = 3
+            self.sk_count = 2
+            self.ea_count = 1
+
+            # levels 2+
+            level_ups = ["hp", "sk", "ea"]
+            for _ in range(self.level - 1):
+                level_up = random.choices(level_ups, weights=[3, 2, 1])[0]
+                if level_up == "hp":
+                    self.hit_points += 1
+                elif level_up == "sk":
+                    self.sk_count += 1
+                elif level_up == "ea":
+                    self.ea_count += 1
+                else:
+                    raise Exception(f"Unexpected value for level_up: {level_up}")
 
     def get_skills(self):
-        _skills = random.sample(SKILLS, k=self.skills_count)
+        _skills = random.sample(SKILLS, k=self.sk_count)
         return _skills
 
     def get_extraordinary_abilities(self):
         _extraordinary_abilities = random.sample(
             EXTRAORDINARY_ABILITIES,
-            k=self.extraordinary_abilities_count,
+            k=self.ea_count,
         )
         return _extraordinary_abilities
 
@@ -142,7 +150,7 @@ class D666Character:
 if __name__ == "__main__":
     from pprint import pprint
 
-    level = random.randint(1, 9)
+    level = random.randint(0, 9)
     print(f"{level = }")
-    character = D666Character(level=level)
+    character = Character(level=level)
     pprint(character.as_dict())
