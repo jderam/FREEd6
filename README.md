@@ -4,7 +4,6 @@ A rules-light tabletop roleplaying game by Jeremy Deram.
 
 *"Simplicity is the ultimate sophistication."* --Leonardo DaVinci
 
-
 ## Table of Contents
 1. [Introduction](rules/book1/01_introduction.md)
 2. [Character Creation](rules/book1/02_character_creation.md)
@@ -18,7 +17,7 @@ A rules-light tabletop roleplaying game by Jeremy Deram.
 - B. [Optional Rules](rules/book3/appendix_b_optional_rules.md)
 
 ## Online Character Generator
-[`https://jderam.github.io/FREEd6/html/chargen.html?level=1&name=auto`](https://jderam.github.io/FREEd6/html/chargen.html?level=1&name=auto)
+[`https://jderam.github.io/FREEd6/html/chargen.html?level=0&name=auto`](https://jderam.github.io/FREEd6/html/chargen.html?level=0&name=auto)
 
 Edit query parameters in the url as follows:
 - Update `level` to generate a character of a higher level, e.g. `level=5`
