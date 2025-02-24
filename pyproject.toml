@@ -56,17 +56,17 @@ exclude = [
 ]
 
 [tool.ruff]
-select = ["E", "F"]
 exclude = []
 line-length = 100
 indent-width = 4
 target-version = "py312"
 
 [tool.ruff.lint]
+select = ["E", "F"]
 fixable = ["ALL"]
 unfixable = []
 
-[tool.ruff.per-file-ignores]
+[tool.ruff.lint.per-file-ignores]
 "src/free_d6/data.py" = ["E501"]
 
 [tool.ruff.format]
