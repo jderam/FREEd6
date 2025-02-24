@@ -1,6 +1,8 @@
 *.DS_Store
 *.egg-info
+.coverage
 .python-version
 *__pycache__*
 build/
 dist/
+uv.lock

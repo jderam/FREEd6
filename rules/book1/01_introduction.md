@@ -1,5 +1,5 @@
 # Introduction
-The **d666 System** is a simple framework I’ve written to encourage fast, fun, and imaginative gaming.
+The **FREEd6 RPG System** is a simple framework I’ve written to encourage fast, fun, and imaginative gaming.
 
 ## Design Goals
 - Minimal materials needed. Each player just needs three regular six-sided dice, a pencil, and a piece of paper.
