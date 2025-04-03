@@ -1,8 +1,19 @@
 # Character Creation
-New characters begin play at level 1 with the following. Record all information on a sheet of paper.
-1. You begin play with 3 hit points.
-2. Roll for or select two [Skills](#skills).
-3. Roll for or select one [Extraordinary Ability](#extraordinary-abilities).
+New characters begin play at level 0 or 1. Record all information on a sheet of paper.
+
+## Level 0
+1. You begin play with 2 hit points (HP).
+2. Roll for or select one [Skill](#skills) (SK).
+3. Roll for one [Wearable Item](#wearble-items).
+4. Roll for one item from each of the **Misc Items** charts ([A](#misc-items-a), [B](#misc-items-b), and [C](#misc-items-c)).
+5. You have no money!
+6. Name your character.
+7. (Optional) Add any interesting details about your character's appearance, background, or mannerisms. You may wish to create a sketch of your character as well.
+
+## Level 1
+1. You begin play with 3 hit points (HP).
+2. Roll for or select two [Skills](#skills) (SK).
+3. Roll for or select one [Extraordinary Ability](#extraordinary-abilities) (EA).
 4. Record equipment from the [Base Equipment Pack](#base-equipment-pack).
 5. Roll for one [Wearable Item](#wearble-items).
 6. Roll for one item from each of the **Misc Items** charts ([A](#misc-items-a), [B](#misc-items-b), and [C](#misc-items-c)).
@@ -10,6 +21,34 @@ New characters begin play at level 1 with the following. Record all information 
 8. Roll 3d6 to determine how many silver pieces (sp) you begin play with.
 9. Name your character.
 10. (Optional) Add any interesting details about your character's appearance, background, or mannerisms. You may wish to create a sketch of your character as well.
+
+## Character Advancement
+Characters earn experience points (XP) for participating in adventures. At a minimum, 1 XP should
+be granted for each session played. Additional points may be granted for completing quests, providing
+good entertainment value to the players at the table, and so forth. Characters will advance in level
+based on XP earned, as shown in the [Advancement Chart](#advancement-chart) below.
+
+### Advancement Chart
+| Level | XP | HP | SK | EA |
+|:-----:|:--:|:--:|:--:|:--:|
+| 0 | 0 | 2 | 1 | 0 |
+| 1 | 1 | 3 | 2 | 1 |
+| 2 | 3 | * | * | * |
+| 3 | 6 | * | * | * |
+| 4 | 10 | * | * | * |
+| 5 | 15 | * | * | * |
+| 6 | 21 | * | * | * |
+| 7 | 28 | * | * | * |
+| 8 | 36 | * | * | * |
+| 9 | 45 | * | * | * |
+
+\* For each level beyond 1st, roll once on the chart below to see if you gain 1 HP, a new **Skill**, or a new **Extraordinary Ability**.
+
+| d6 Roll | Result |
+|:-------:|--------|
+| 1-3 | Gain 1 HP |
+| 4-5 | Gain 1 SK |
+| 6 | Gain 1 EA |
 
 ## Skills
 Below are the various skills and the summaries of their respective uses.
@@ -124,17 +163,3 @@ These are unique abilities an adventurer can perform that are generally not poss
 4. Javelins, sheaf of 6
 5. Shuriken, bandolier of 12
 6. Sling, pouch of 12 stones
-
-## Character Advancement
-For each adventure completed (or whatever milestone the GM determines appropriate), the
-character gains a level. Roll on the **Advancement Table** below to determine what benefit is gained.
-Note that characters will generally gain more power from magic items and artifacts acquired on their
-adventures than they will from advancing though levels, but they will gain notoriety in
-the world based on their level.
-
-### Advancement Table
-| d6 Roll | Benefit |
-|:-------:|---------|
-| 1-3     | Gain 1 hit point |
-| 4-5     | Gain a Skill |
-| 6       | Gain an Extraordinary Ability |
