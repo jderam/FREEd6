@@ -66,7 +66,7 @@ they would not get the improved chance at success that haivng a skill grants.
 6. **Legerdemain**: Performing card tricks, picking pockets, and similar.
 
 ##### (4-6)
-1. **Muscle**: Break down doors, lift heavy things, etc.
+1. **Muscle**: Break down doors, lift heavy things, etc. (Non-combat)
 2. **Parkour**: Balancing, climbing, jumping, tumbling.
 3. **Sneak**: Quietly move or hide without being noticed.
 4. **Survival**: Navigate, find food and shelter, track animals and people while in the wilderness.
@@ -78,8 +78,8 @@ These are unique abilities an adventurer can perform that are generally not poss
 
 ##### (1-3)
 1. **Alchemy**: Mix potions and poisons, provided the necessary ingredients are at hand. Identify unknown liquids with a successful check.
-2. **Beastmaster**: Make a check to tame a beast who's hit points don't exceed your own. The pet must be fed and treated well. If ever neglected, or called on to aid in direct combat, another check must be made to prevent the creature from abandoning you. If this ability is taken a second time, or you have the zoophilism skill, the checks are successful on 4+.
-3. **Berserks Mode**: You may choose to enter a berserker rage, which lasts until the end of a combat. All attacks are made with disadvantage, but deal double damage on a hit.
+2. **Beastmaster**: Make a check to tame a beast whose hit points don't exceed your own. The pet must be fed and treated well. If ever neglected, or called on to aid in direct combat, another check must be made to prevent the creature from abandoning you. If this ability is taken a second time, or you have the zoophilism skill, the checks are successful on 4+.
+3. **Berserks Mode**: You may choose to enter a berserker rage, which lasts until the end of a combat. All attacks deal double damage on a hit, but attacks against you have advantage due to your recklessness.
 4. **Cantraps**: Produce minor, non-damaging magical effects at will.
 5. **Diehard**: The first time you fall to 0 hit points in a given day, you immediately gain 1 hit point back and don't lose consciousness.
 6. **Healing**: As an action, you can make a check to heal an ally other than yourself. On a success, the target creature is healed for 2 hit points. Alternatively, this ability can also be used to cure poison, disease, and other physical ailments that are non-magical. You must touch the recipient to perform the healing, which is limited to once per day per character.
