@@ -78,15 +78,16 @@ These are unique abilities an adventurer can perform that are generally not poss
 
 ##### (1-3)
 1. **Alchemy**: Mix potions and poisons, provided the necessary ingredients are at hand. Identify unknown liquids with a successful check.
-2. **Beastmaster**: Make a check to tame a beast whose hit points don't exceed your own. The pet must be fed and treated well. If ever neglected, or called on to aid in direct combat, another check must be made to prevent the creature from abandoning you. If this ability is taken a second time, or you have the zoophilism skill, the checks are successful on 4+.
-3. **Berserks Mode**: You may choose to enter a berserker rage, which lasts until the end of a combat. All attacks deal double damage on a hit, but attacks against you have advantage due to your recklessness.
-4. **Cantraps**: Produce minor, non-damaging magical effects at will.
-5. **Diehard**: The first time you fall to 0 hit points in a given day, you immediately gain 1 hit point back and don't lose consciousness.
-6. **Healing**: As an action, you can make a check to heal an ally other than yourself. On a success, the target creature is healed for 2 hit points. Alternatively, this ability can also be used to cure poison, disease, and other physical ailments that are non-magical. You must touch the recipient to perform the healing, which is limited to once per day per character.
+2. **Backstab**: Once per combat encounter, if you can successfully _Sneak_ and catch an enemy unawares, you get ADV on the combat check. If you hit, you deal extra damage based on your level. (1-4: +1; 5-8: +2; 9: +3)
+3. **Beastmaster**: Make a check to tame a beast whose hit points don't exceed your own. The pet must be fed and treated well. If ever neglected, or called on to aid in direct combat, another check must be made to prevent the creature from abandoning you. If this ability is taken a second time, or you have the zoophilism skill, the checks are successful on 4+.
+4. **Berserks Mode**: You may choose to enter a berserker rage, which lasts until the end of a combat. All attacks deal double damage on a hit, but attacks against you have advantage due to your recklessness.
+5. **Cantraps**: Produce minor, non-damaging magical effects at will.
+6. **Diehard**: The first time you fall to 0 hit points in a given day, you immediately gain 1 hit point back and don't lose consciousness.
+7. 
 
 ##### (3-6)
-1. **Perceptive**: You have a chance to notice secret doors or other important yet subtle clues that others would miss. The GM needs to make the checks for this, and may need to be reminded from time to time that you have this ability.
-2. **Read Magic**: Ability to discern arcane writing and cast spells from scrolls. When this ability is gained, the character also gains two randomly determined scrolls (see [**Magic**](04_magic.md)).
+1. **Healing**: As an action, you can make a check to heal an ally other than yourself. On a success, the target creature is healed for 2 hit points. Alternatively, this ability can also be used to cure poison, disease, and other physical ailments that are non-magical. You must touch the recipient to perform the healing, which is limited to once per day per character.
+2. **Perceptive**: You have a chance to notice secret doors or other important yet subtle clues that others would miss. The GM needs to make the checks for this, and may need to be reminded from time to time that you have this ability.
 3. **Repel Undead**: On a successful check, you add the total of the two dice and turn away that many hit points of undead creatures. May be attempted once per combat.
 4. **Vigilant**: Whenever your side loses initiative, make a check. If the check is successful, you act first.
 5. **Weapon Training**: You make combat checks with skill for a specific weapon group.
