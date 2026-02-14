@@ -59,15 +59,11 @@ class Character:
                     raise Exception(f"Unexpected value for level_up: {level_up}")
 
     def get_skills(self):
-        _skills = random.sample(SKILLS, k=self.sk_count)
-        return _skills
+        return random.sample(SKILLS, k=self.sk_count)
 
     def get_extraordinary_abilities(self):
-        _extraordinary_abilities = random.sample(
-            EXTRAORDINARY_ABILITIES,
-            k=self.ea_count,
-        )
-        return _extraordinary_abilities
+        # running the result of random.sample through dict() is to coerce a shallow copy
+        return [dict(ea) for ea in random.sample(EXTRAORDINARY_ABILITIES, k=self.ea_count)]
 
     def special_ea_rules(self):
         """Check for special rules."""
