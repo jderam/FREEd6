@@ -20,7 +20,6 @@ OS := $(shell uname)
 	upgrade_hooks
 
 PYTHON_VERSION=3.14
-VENV_NAME=FREEd6
 
 build_and_test: clean build_wheel pip_install test ## Build wheel, install, and execute tests
 
@@ -31,18 +30,16 @@ clean: ## clean out dist/ directory
 	rm -rf dist/*
 
 deploy_test: ## run all checks, build dist files, upload to test pypi
-	uv run ruff check .
-	rm -f dist/*
-	uv build --clear
-	uv run twine check dist/*
-	uv run twine upload --repository testpypi dist/*
+	$(MAKE) check
+	$(MAKE) build
+# 	uv run twine upload --repository testpypi dist/*
+	uv run uv-publish --repository testpypi
 
 deploy_prod: ## run all checks, build dist files, upload to prod pypi
-	uv run ruff check .
-	rm -f dist/*
-	uv build --clear
-	uv run twine check dist/*
-	uv run twine upload --repository account dist/*
+	$(MAKE) check
+	$(MAKE) build
+# 	uv run twine upload --repository account dist/*
+	uv run uv-publish --repository account
 
 install_wheel: ## pip install this package
 	uv run python -m pip install dist/free_d6-*-py3-none-any.whl --force-reinstall
