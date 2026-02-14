@@ -92,9 +92,9 @@ class Character:
         for ea in self.extraordinary_abilities:
             if list(ea.keys())[0] == "Weapon Training":
                 ea[f"Weapon Training ({self.trained_weapon})"] = ea.pop("Weapon Training")
-                ea[
-                    f"Weapon Training ({self.trained_weapon})"
-                ] = f"You make {self.trained_weapon} combat checks as skilled."
+                ea[f"Weapon Training ({self.trained_weapon})"] = (
+                    f"You make {self.trained_weapon} combat checks as skilled."
+                )
 
     def get_weapon(self):
         if self.has_weapon_training:
