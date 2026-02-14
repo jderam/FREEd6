@@ -1,5 +1,4 @@
 import random
-from typing import Dict, List
 
 from free_d6.data import (
     SKILLS,
@@ -24,13 +23,13 @@ class Character:
         self.name: str = ""
         self.level: int = level
         self.level_abilities()
-        self.skills: List[Dict[str, str]] = self.get_skills()
-        self.extraordinary_abilities: List[Dict[str, str]] = self.get_extraordinary_abilities()
+        self.skills: list[dict[str, str]] = self.get_skills()
+        self.extraordinary_abilities: list[dict[str, str]] = self.get_extraordinary_abilities()
         self.special_ea_rules()
         self.weapon: str = self.get_weapon()
-        self.equipment: List[str] = self.get_equipment()
+        self.equipment: list[str] = self.get_equipment()
         self.background: str = self.get_background()
-        # self.spells: List[Dict[str, str]] = self.get_spells()
+        # self.spells: list[dict[str, str]] = self.get_spells()
         self.money: str = self.get_money()
 
     def level_abilities(self):
