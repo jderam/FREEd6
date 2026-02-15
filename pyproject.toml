@@ -58,7 +58,7 @@ packages = ["src/free_d6"]
 exclude = []
 line-length = 100
 indent-width = 4
-target-version = "py313"
+target-version = "py314"
 
 [tool.ruff.lint]
 select = ["E", "F", "W"]
