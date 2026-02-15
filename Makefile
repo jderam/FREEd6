@@ -5,7 +5,6 @@ OS := $(shell uname)
 
 .PHONY: \
 	build \
-	build_and_test \
 	check \
 	clean \
 	create_venv \
@@ -20,8 +19,6 @@ OS := $(shell uname)
 	upgrade_hooks
 
 PYTHON_VERSION=3.14
-
-build_and_test: clean build_wheel pip_install test ## Build wheel, install, and execute tests
 
 build: ## build the wheel for this package
 	uv build --clear
