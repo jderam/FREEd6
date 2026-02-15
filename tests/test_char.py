@@ -109,9 +109,8 @@ def test_as_dict():
         "ea_count",
         "skills",
         "extraordinary_abilities",
-        "has_wizardry",
-        "has_weapon_training",
         "trained_weapon",
+        "spells",
         "weapon",
         "equipment",
         "background",
@@ -147,11 +146,10 @@ def test_wizardry_spells():
     for _ in range(500):
         c = Character(level=3)
         if c.has_wizardry:
-            spells = c.get_spells()
-            assert len(spells) == 3
-            for spell in spells:
+            assert len(c.spells) == 3
+            for spell in c.spells:
                 assert isinstance(spell, dict)
-                spell_name = list(spell.keys())[0]
+                spell_name = next(iter(spell))
                 assert spell_name in SPELLS
             return
     raise AssertionError("No character with Wizardry generated")
@@ -161,5 +159,4 @@ def test_no_wizardry_no_spells():
     random.seed(42)
     c = Character(level=0)
     assert not c.has_wizardry
-    spells = c.get_spells()
-    assert spells == []
+    assert c.spells == []
