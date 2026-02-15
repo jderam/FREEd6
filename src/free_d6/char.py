@@ -17,7 +17,7 @@ from free_d6.data import (
 
 
 class Character:
-    """Yeah."""
+    """A randomly generated FREEd6 character."""
 
     def __init__(self, level: int = 0) -> None:
         self.name: str = ""
