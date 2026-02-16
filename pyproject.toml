@@ -32,12 +32,10 @@ dependencies = []
 
 [project.optional-dependencies]
 dev = [
-    # "build",
     "pre-commit",
     "pytest",
     "pytest-cov",
     "ruff",
-    # "twine",
     "uv-publish",
 ]
 
