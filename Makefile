@@ -13,7 +13,6 @@ OS := $(shell uname)
 	help \
 	install \
 	install_wheel \
-	rebuild_venv \
 	test \
 	upgrade_deps \
 	upgrade_hooks
@@ -33,10 +32,7 @@ deploy_test: ## run all checks, build dist files, upload to test pypi
 	uv run uv-publish --repository testpypi
 
 deploy_prod: ## run all checks, build dist files, upload to prod pypi
-	$(MAKE) check
-	$(MAKE) build
-# 	uv run twine upload --repository account dist/*
-	uv run uv-publish --repository account
+	@echo "prod deployment is automatic on merge to main branch via GitHub Actions workflow (publish.yml)."
 
 install_wheel: ## pip install this package
 	uv run python -m pip install dist/free_d6-*-py3-none-any.whl --force-reinstall
@@ -57,16 +53,11 @@ create_venv: ## create virtualenv for this project
 	uv sync --python=${PYTHON_VERSION} --all-extras --frozen
 	uv run pre-commit install
 
-activate_venv: ## activate the virtualenv for this project
-	source .venv/bin/activate
-
 upgrade_deps: ## upgrade all dependencies to latest versions
 	uv sync --python=${PYTHON_VERSION} --all-extras
 
 upgrade_hooks: ## upgrade pre-commit hooks to latest versions
 	uv run pre-commit autoupdate
-
-rebuild_venv: create_venv activate_venv install ## rebuild project virtualenv
 
 help: ## Generate and display help info on make commands
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'
