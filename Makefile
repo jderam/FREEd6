@@ -42,7 +42,7 @@ install_wheel: ## pip install this package
 	uv run python -m pip install dist/free_d6-*-py3-none-any.whl --force-reinstall
 
 test: ## Run pytest tests
-	uv run pytest --cov-report term-missing tests/
+	uv run pytest tests/
 
 check: ## Run all linting/formatting checks
 	uv run ruff check .
