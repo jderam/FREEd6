@@ -4,6 +4,22 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.3.0] - 2026-02-14
+### Added
+- Unit tests for Character class and data module
+- GitHub Actions CI workflow (lint + test across Python 3.11–3.14)
+- GitHub Actions publish workflow (PyPI trusted publishers)
+
+### Fixed
+- Broken appendix links in README
+
+### Changed
+- Refactored Character class for clearer structure and fixed bugs
+- Migrated build backend from setuptools to hatchling
+- Modernized dev tooling (uv, ruff formatting, pre-commit hooks)
+- Updated supported Python versions to 3.11–3.14
+- Cleaned up Makefile (removed dead targets, prod deploy via GitHub Actions)
+
 ## [0.2.0] - 2024-10-28
 ### Changed
 - Renamed repo `d666-rpg-system` -> `FREEd6`

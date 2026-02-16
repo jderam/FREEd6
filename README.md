@@ -13,8 +13,8 @@ A rules-light tabletop roleplaying game by Jeremy Deram.
 6. [Treasures](rules/book2/06_treasures.md)
 
 #### Appendices
-- A. [Converting Classic Monsters](rules/book3/appendix_a_converting_monsters.md)
-- B. [Optional Rules](rules/book3/appendix_b_optional_rules.md)
+- A. [Converting Classic Monsters](rules/misc/appendix_a_converting_monsters.md)
+- B. [Optional Rules](rules/misc/appendix_b_optional_rules.md)
 
 ## Online Character Generator
 [`https://jderam.github.io/FREEd6/html/chargen.html?level=0&name=auto`](https://jderam.github.io/FREEd6/html/chargen.html?level=0&name=auto)

@@ -1,5 +1,4 @@
 import random
-from typing import Dict, List
 
 from free_d6.data import (
     SKILLS,
@@ -18,132 +17,103 @@ from free_d6.data import (
 
 
 class Character:
-    """Yeah."""
+    """A randomly generated FREEd6 character."""
 
     def __init__(self, level: int = 0) -> None:
         self.name: str = ""
         self.level: int = level
-        self.level_abilities()
-        self.skills: List[Dict[str, str]] = self.get_skills()
-        self.extraordinary_abilities: List[Dict[str, str]] = self.get_extraordinary_abilities()
-        self.special_ea_rules()
-        self.weapon: str = self.get_weapon()
-        self.equipment: List[str] = self.get_equipment()
-        self.background: str = self.get_background()
-        # self.spells: List[Dict[str, str]] = self.get_spells()
-        self.money: str = self.get_money()
+        self.hit_points, self.sk_count, self.ea_count = self._roll_abilities()
+        self.skills: list[dict[str, str]] = self._roll_skills()
+        self.extraordinary_abilities: list[dict[str, str]] = self._roll_extraordinary_abilities()
+        self.trained_weapon: str | None = self._resolve_weapon_training()
+        self.spells: list[dict[str, str]] = self._roll_spells()
+        self.weapon: str = self._roll_weapon()
+        self.equipment: list[str] = self._roll_equipment()
+        self.background: str = self._roll_background()
+        self.money: int = self._roll_money()
 
-    def level_abilities(self):
+    @property
+    def has_wizardry(self) -> bool:
+        ea_keys = [next(iter(ea)) for ea in self.extraordinary_abilities]
+        return "Wizardry" in ea_keys
+
+    @property
+    def has_weapon_training(self) -> bool:
+        ea_keys = [next(iter(ea)) for ea in self.extraordinary_abilities]
+        return any(k.startswith("Weapon Training") for k in ea_keys)
+
+    def _roll_abilities(self) -> tuple[int, int, int]:
         """Calculate number of hit points, skills, and extraordinary abilities based on level."""
         if self.level == 0:
-            self.hit_points = 2
-            self.sk_count = 1
-            self.ea_count = 0
-        else:
-            # level 1
-            self.hit_points = 3
-            self.sk_count = 2
-            self.ea_count = 1
+            return 2, 1, 0
 
-            # levels 2+
-            level_ups = ["hp", "sk", "ea"]
-            for _ in range(self.level - 1):
-                level_up = random.choices(level_ups, weights=[3, 2, 1])[0]
-                if level_up == "hp":
-                    self.hit_points += 1
-                elif level_up == "sk":
-                    self.sk_count += 1
-                elif level_up == "ea":
-                    self.ea_count += 1
-                else:
-                    raise Exception(f"Unexpected value for level_up: {level_up}")
+        # level 1
+        hit_points = 3
+        sk_count = 2
+        ea_count = 1
 
-    def get_skills(self):
-        _skills = random.sample(SKILLS, k=self.sk_count)
-        return _skills
+        # levels 2+
+        level_ups = ["hp", "sk", "ea"]
+        for _ in range(self.level - 1):
+            level_up = random.choices(level_ups, weights=[3, 2, 1])[0]
+            if level_up == "hp":
+                hit_points += 1
+            elif level_up == "sk":
+                sk_count += 1
+            elif level_up == "ea":
+                ea_count += 1
+        return hit_points, sk_count, ea_count
 
-    def get_extraordinary_abilities(self):
-        _extraordinary_abilities = random.sample(
-            EXTRAORDINARY_ABILITIES,
-            k=self.ea_count,
-        )
-        return _extraordinary_abilities
+    def _roll_skills(self) -> list[dict[str, str]]:
+        return random.sample(SKILLS, k=self.sk_count)
 
-    def special_ea_rules(self):
-        """Check for special rules."""
-        ea_keys = [list(ea.keys())[0] for ea in self.extraordinary_abilities]
-        self.has_wizardry = "Wizardry" in ea_keys
-        self.has_weapon_training = "Weapon Training" in ea_keys
-        self.check_for_weapon_training()
-        self.get_spells()
+    def _roll_extraordinary_abilities(self) -> list[dict[str, str]]:
+        # shallow copy each dict to avoid mutating global data
+        return [dict(ea) for ea in random.sample(EXTRAORDINARY_ABILITIES, k=self.ea_count)]
 
-    def check_for_weapon_training(self):
-        """Check if character has the 'Weapon Training' extraordinary ability."""
-        self.trained_weapon = None
-        if self.has_weapon_training:
-            self.trained_weapon = random.choice(
-                [
-                    "Unarmed",
-                    "Light Melee",
-                    "Heavy Melee",
-                    "Ranged",
-                ]
-            )
+    def _resolve_weapon_training(self) -> str | None:
+        """If character has Weapon Training, pick a weapon group and update the EA entry."""
         for ea in self.extraordinary_abilities:
-            if list(ea.keys())[0] == "Weapon Training":
-                ea[f"Weapon Training ({self.trained_weapon})"] = ea.pop("Weapon Training")
-                ea[
-                    f"Weapon Training ({self.trained_weapon})"
-                ] = f"You make {self.trained_weapon} combat checks as skilled."
+            if next(iter(ea)) == "Weapon Training":
+                trained = random.choice(["Unarmed", "Light Melee", "Heavy Melee", "Ranged"])
+                ea.pop("Weapon Training")
+                ea[f"Weapon Training ({trained})"] = f"You make {trained} combat checks as skilled."
+                return trained
+        return None
 
-    def get_weapon(self):
-        if self.has_weapon_training:
-            if self.trained_weapon == "Light Melee":
-                weapon = random.choice(LIGHT_MELEE_WEAPONS)
-            elif self.trained_weapon == "Heavy Melee":
-                weapon = random.choice(HEAVY_MELEE_WEAPONS)
-            elif self.trained_weapon == "Ranged":
-                weapon = random.choice(RANGED_WEAPONS)
-            elif self.trained_weapon == "Unarmed":
-                weapon = "Unarmed"
-        else:
-            weapon = random.choice(LIGHT_MELEE_WEAPONS + HEAVY_MELEE_WEAPONS + RANGED_WEAPONS)
-        return weapon
+    def _roll_weapon(self) -> str:
+        if self.trained_weapon == "Light Melee":
+            return random.choice(LIGHT_MELEE_WEAPONS)
+        elif self.trained_weapon == "Heavy Melee":
+            return random.choice(HEAVY_MELEE_WEAPONS)
+        elif self.trained_weapon == "Ranged":
+            return random.choice(RANGED_WEAPONS)
+        elif self.trained_weapon == "Unarmed":
+            return "Unarmed"
+        return random.choice(LIGHT_MELEE_WEAPONS + HEAVY_MELEE_WEAPONS + RANGED_WEAPONS)
 
-    def get_equipment(self):
+    def _roll_equipment(self) -> list[str]:
         """Base equipment plus one item from each list."""
-        equipment = []
-        equipment.extend(BASE_EQUIPMENT)
-        for items in [
-            CLOTHING_ITEMS,
-            EQUIPMENT_A,
-            EQUIPMENT_B,
-            EQUIPMENT_C,
-        ]:
+        equipment = list(BASE_EQUIPMENT)
+        for items in [CLOTHING_ITEMS, EQUIPMENT_A, EQUIPMENT_B, EQUIPMENT_C]:
             equipment.append(random.choice(items))
         return equipment
 
-    def get_background(self):
-        """Select a random background."""
+    def _roll_background(self) -> str:
         return random.choice(BACKGROUNDS)
 
-    def get_spells(self):
+    def _roll_spells(self) -> list[dict[str, str]]:
         """Roll on the Knave spells table if character has Wizardry."""
-        spells = []
-        if self.has_wizardry:
-            spell_keys = random.sample(list(SPELLS.keys()), k=3)
-            print(f"{spell_keys = }")
-            spells = [{k: v} for k, v in SPELLS.items() if k in spell_keys]
-        return spells
+        if not self.has_wizardry:
+            return []
+        spell_keys = random.sample(list(SPELLS.keys()), k=3)
+        return [{k: v} for k, v in SPELLS.items() if k in spell_keys]
 
-    def get_money(self):
+    def _roll_money(self) -> int:
         """Roll 3d6 for starting money."""
-        money = 0
-        for _ in range(3):
-            money += random.randint(1, 6)
-        return money
+        return sum(random.randint(1, 6) for _ in range(3))
 
-    def as_dict(self):
+    def as_dict(self) -> dict:
         return self.__dict__
 
 
