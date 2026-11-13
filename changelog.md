@@ -4,6 +4,20 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.4.0] - 2026-11-13
+### Changed
+- Character generator rewritten in plain JavaScript (`html/js/`); it now runs entirely in the browser with no backend service
+- Removed the Vue and Google Fonts CDN dependencies; fonts are now served from `html/fonts/`
+- CI now runs the JavaScript tests (`node tests/js/test_chargen.js`)
+
+### Removed
+- The `free_d6` Python package, its tests, scripts (`gen_char_sheet.py`, `spells_chart.py`), and build tooling (uv, ruff, pre-commit, Makefile)
+- PyPI publishing and auto-tagging workflow, and the CI version and changelog checks
+
+### Fixed
+- Spells are now shown for characters with Wizardry in the character generator
+- Advancement Chart and Spell Check Chart tables now render on the GitHub Pages site
+
 ## [0.3.2] - 2026-03-07
 ### Added
 - CI checks for version increment and changelog entry on PRs

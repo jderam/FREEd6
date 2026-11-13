@@ -1,8 +1,20 @@
-/* font-family: 'Press Start 2P', system-ui; */
+/* Self-hosted fonts (latin subset), both under the SIL Open Font License;
+   see the OFL.txt files in fonts/. */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url(fonts/roboto-latin.woff2) format('woff2');
+}
 
-/* font-family: 'Roboto', sans-serif; */
-
-/* font-family: 'Rubik Glitch', system-ui; */
+@font-face {
+    font-family: 'Rubik Glitch';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(fonts/rubik-glitch-latin.woff2) format('woff2');
+}
 
 .container {
     display: grid;

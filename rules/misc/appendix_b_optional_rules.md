@@ -20,6 +20,7 @@ There is a chance of failure, but there is also a chance that you may cast a
 spell multiple times. Additionally, critcal success or failure is a possibility.
 
 #### Spell Check Chart
+
 | d66 Roll | Result |
 |:--------:|---------|
 | 11       | Critical failure! Spell fails and the caster suffers a corruption. Roll on the corruption chart. |

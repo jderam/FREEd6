@@ -19,6 +19,8 @@ A rules-light tabletop roleplaying game by Jeremy Deram.
 ## Online Character Generator
 [`https://jderam.github.io/FREEd6/html/chargen.html?level=0&name=auto`](https://jderam.github.io/FREEd6/html/chargen.html?level=0&name=auto)
 
+The generator runs entirely in your browser.
+
 Edit query parameters in the url as follows:
 - Update `level` to generate a character of a higher level, e.g. `level=5`
 - Update `name` to modify how name is generated
