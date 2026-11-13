@@ -29,6 +29,7 @@ good entertainment value to the players at the table, and so forth. Characters w
 based on XP earned, as shown in the [Advancement Chart](#advancement-chart) below.
 
 ### Advancement Chart
+
 | Level | XP | HP | SK | EA |
 |:-----:|:--:|:--:|:--:|:--:|
 | 0 | 0 | 2 | 1 | 0 |

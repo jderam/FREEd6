@@ -1,131 +1,83 @@
-SKILLS = [
+// Game data tables for the FREEd6 character generator.
+const FREEd6Data = {
+  "SKILLS": [
     {
-        "Dungeoneering": (
-            "Navigate dungeons and caves, detect grades and slopes, "
-            "identify subterranean creatures."
-        ),
+      "Dungeoneering": "Navigate dungeons and caves, detect grades and slopes, identify subterranean creatures."
     },
     {
-        "Fast-Talk": "Convince another through charisma or subterfuge.",
+      "Fast-Talk": "Convince another through charisma or subterfuge."
     },
     {
-        "Hypermnesia": "Perfectly recall information the character was previously exposed to.",
+      "Hypermnesia": "Perfectly recall information the character was previously exposed to."
     },
     {
-        "Intuition": "Discern lies or malicious intent; notice an important detail.",
+      "Intuition": "Discern lies or malicious intent; notice an important detail."
     },
     {
-        "Knowledge": (
-            "Awareness of a bit of lore, science, or trivia that may be relevant to the situation."
-        ),
+      "Knowledge": "Awareness of a bit of lore, science, or trivia that may be relevant to the situation."
     },
     {
-        "Legerdemain": "Performing card tricks, picking pockets, and similar.",
+      "Legerdemain": "Performing card tricks, picking pockets, and similar."
     },
     {
-        "Muscle": "Break down doors, lift heavy things, etc.",
+      "Muscle": "Break down doors, lift heavy things, etc."
     },
     {
-        "Parkour": "Balancing, climbing, jumping, tumbling.",
+      "Parkour": "Balancing, climbing, jumping, tumbling."
     },
     {
-        "Sneak": "Quietly move or hide without being noticed.",
+      "Sneak": "Quietly move or hide without being noticed."
     },
     {
-        "Survival": (
-            "Navigate, find food and shelter, track animals and people while in the wilderness."
-        ),
+      "Survival": "Navigate, find food and shelter, track animals and people while in the wilderness."
     },
     {
-        "Tinkering": (
-            "Pick locks, set or disarm traps, discern how technological items work. "
-            "Tools may be required."
-        ),
+      "Tinkering": "Pick locks, set or disarm traps, discern how technological items work. Tools may be required."
     },
     {
-        "Zoophilism": "Ability to calm, empathize with, and communicate in a "
-        "rudimentary fashion with animals."
-    },
-]
-
-EXTRAORDINARY_ABILITIES = [
+      "Zoophilism": "Ability to calm, empathize with, and communicate in a rudimentary fashion with animals."
+    }
+  ],
+  "EXTRAORDINARY_ABILITIES": [
     {
-        "Alchemy": (
-            "Mix potions and poisons, provided the necessary ingredients are at hand. "
-            "Identify unknown liquids with a successful check."
-        ),
+      "Alchemy": "Mix potions and poisons, provided the necessary ingredients are at hand. Identify unknown liquids with a successful check."
     },
     {
-        "Beastmaster": (
-            "Make a check to tame a beast who's hit points don't exceed your own. "
-            "The pet must be fed and treated well. If ever neglected, or called on to "
-            "aid in direct combat, another check must be made to prevent the creature from "
-            "abandoning you. If this ability is taken a second time, or you have the "
-            "zoophilism skill, the checks are successful on 4+."
-        ),
+      "Beastmaster": "Make a check to tame a beast who's hit points don't exceed your own. The pet must be fed and treated well. If ever neglected, or called on to aid in direct combat, another check must be made to prevent the creature from abandoning you. If this ability is taken a second time, or you have the zoophilism skill, the checks are successful on 4+."
     },
     {
-        "Berserks Mode": (
-            "You may choose to enter a berserker rage, which lasts until the end of a "
-            "combat. All attacks are made with disadvantage, but deal double damage on a hit."
-        ),
+      "Berserks Mode": "You may choose to enter a berserker rage, which lasts until the end of a combat. All attacks are made with disadvantage, but deal double damage on a hit."
     },
     {
-        "Cantraps": "Produce minor, non-damaging magical effects at will.",
+      "Cantraps": "Produce minor, non-damaging magical effects at will."
     },
     {
-        "Diehard": (
-            "The first time you fall to 0 hit points in a given day, you immediately gain "
-            "1 hit point back and don't lose consciousness."
-        ),
+      "Diehard": "The first time you fall to 0 hit points in a given day, you immediately gain 1 hit point back and don't lose consciousness."
     },
     {
-        "Healing": (
-            "As an action, you can make a check to heal an ally other than yourself. "
-            "On a success, the target creature is healed for 2 hit points. Alternatively, "
-            "this ability can also be used to cure poison, disease, and other physical "
-            "ailments that are non-magical. You must touch the recipient to perform the healing."
-        ),
+      "Healing": "As an action, you can make a check to heal an ally other than yourself. On a success, the target creature is healed for 2 hit points. Alternatively, this ability can also be used to cure poison, disease, and other physical ailments that are non-magical. You must touch the recipient to perform the healing."
     },
     {
-        "Read Magic": (
-            "Ability to discern arcane writing and cast spells from scrolls. When this ability "
-            "is gained, the character also gains two randomly determined scrolls (see Magic)."
-        ),
+      "Read Magic": "Ability to discern arcane writing and cast spells from scrolls. When this ability is gained, the character also gains two randomly determined scrolls (see Magic)."
     },
     {
-        "Repel Undead": (
-            "On a successful check, you add the total of the two dice and turn away that many "
-            "hit points of undead creatures. May be attempted once per combat."
-        ),
+      "Repel Undead": "On a successful check, you add the total of the two dice and turn away that many hit points of undead creatures. May be attempted once per combat."
     },
     {
-        "Vigilant": (
-            "Whenever your side loses initiative, make a check. If the check is successful, "
-            "you act first."
-        ),
+      "Vigilant": "Whenever your side loses initiative, make a check. If the check is successful, you act first."
     },
     {
-        "Wizardry": (
-            "Knowledge of and ability to cast three randomly determined spells (see Magic). "
-            "This ability may be taken multiple times, and three additional random spells "
-            "are learned each time."
-        ),
+      "Wizardry": "Knowledge of and ability to cast three randomly determined spells (see Magic). This ability may be taken multiple times, and three additional random spells are learned each time."
     },
     {
-        "Perceptive": (
-            "You have a chance to notice secret doors or other important yet subtle clues "
-            "that others would miss. The GM needs to make the checks for this, and may need "
-            "to be reminded from time to time that you have this ability."
-        ),
+      "Perceptive": "You have a chance to notice secret doors or other important yet subtle clues that others would miss. The GM needs to make the checks for this, and may need to be reminded from time to time that you have this ability."
     },
     {
-        "Weapon Training": "You make combat checks with skill for a specific weapon group.",
-    },
-]
-
-# Backgrounds from Knave, with some modifications
-BACKGROUNDS = [
+      "Weapon Training": "You make combat checks with skill for a specific weapon group."
+    }
+  ],
+  // Backgrounds from Knave, with some modifications
+  "BACKGROUNDS": [
     "Academic",
     "Beggar",
     "Butcher",
@@ -143,64 +95,57 @@ BACKGROUNDS = [
     "Minstrel",
     "Outlaw",
     "Pickpocket",
-    "Smuggler",
-]
-
-BASE_EQUIPMENT = [
+    "Smuggler"
+  ],
+  "BASE_EQUIPMENT": [
     "Rucksack",
     "Rations (7)",
     "Waterskin",
     "Flint & Steel",
-    "Torches (6)",
-]
-
-CLOTHING_ITEMS = [
+    "Torches (6)"
+  ],
+  "CLOTHING_ITEMS": [
     "Helmet",
     "Fine Cape",
     "Stylish Hat",
     "Hooded Woolen Cloak",
     "Eye Patch",
-    "Bandit Mask",
-]
-
-EQUIPMENT_A = [
+    "Bandit Mask"
+  ],
+  "EQUIPMENT_A": [
     "Lasso",
     "Flask of Acid",
     "Pouch of Marbles",
     "Ball of Twine (100')",
     "Flask of Oil (2)",
-    "Molotov Cocktail",
-]
-
-EQUIPMENT_B = [
+    "Molotov Cocktail"
+  ],
+  "EQUIPMENT_B": [
     "Prybar",
     "Whistle",
     "Skeleton Key",
     "Hammer, 10 Pitons",
     "Spyglass",
-    "Lock Picks",
-]
-
-EQUIPMENT_C = [
+    "Lock Picks"
+  ],
+  "EQUIPMENT_C": [
     "10' Pole",
     "Pouch of Sand",
     "Compass",
     "Jar of Lard",
     "Pliers",
-    "Rope (50')",
-]
-
-LIGHT_MELEE_WEAPONS = [
+    "Rope (50')"
+  ],
+  "LIGHT_MELEE_WEAPONS": [
     "Dagger",
     "Stiletto",
     "Hand Axe",
     "Mace",
     "Nunchaku",
     "Sword",
-    "Quarterstaff",
-]
-
-HEAVY_MELEE_WEAPONS = [
+    "Quarterstaff"
+  ],
+  "HEAVY_MELEE_WEAPONS": [
     "Battle Axe",
     "Double-Bladed Scimitar",
     "Bat'leth",
@@ -209,20 +154,18 @@ HEAVY_MELEE_WEAPONS = [
     "Halberd",
     "Polearm",
     "Maul",
-    "Zweihänder",
-]
-
-RANGED_WEAPONS = [
+    "Zweihänder"
+  ],
+  "RANGED_WEAPONS": [
     "Crossbow, boltcase of 12 Bolts",
     "Bow, quiver of 12 Arrows",
     "Darts, bandolier of 12",
     "Javelins, sheaf of 6",
     "Shuriken, bandolier of 12",
-    "Sling, pouch of 12 Stones",
-]
-
-# A fork of Knave spells, customized for d666
-SPELLS = {
+    "Sling, pouch of 12 Stones"
+  ],
+  // A fork of Knave spells, customized for d666
+  "SPELLS": {
     "Adhere": "Object is covered in extremely sticky slime.",
     "Animate Object": "Object obeys your commands as best it can. It can walk 15ft per round.",
     "Anthropomorphize": "A touched animal either gains human intelligence or human appearance for L days.",
@@ -231,7 +174,7 @@ SPELLS = {
     "Attract": "L+1 objects are strongly magnetically attracted to each other if they come within 10 feet.",
     "Auditory Illusion": "You create illusory sounds that seem to come from a direction of your choice.",
     "Babble": "A creature must loudly and clearly repeat everything you think. It is otherwise mute.",
-    "Battle Imperative": "The caster's side goes first in every turn of a combat - no initiative rolls.",  # EC
+    "Battle Imperative": "The caster's side goes first in every turn of a combat - no initiative rolls.", // EC
     "Beast Form": "You and your possessions transform into a mundane animal.",
     "Befuddle": "L creatures of your choice are unable to form new short term memories for the duration of the spell.",
     "Bend Fate": "Roll L+1 dice. Whenever you must roll a die after casting this spell, you must choose and then discard one of the rolled results until they are all gone.",
@@ -239,7 +182,7 @@ SPELLS = {
     "Body Swap": "You switch bodies with a creature you touch . If one body dies, the other dies as well.",
     "Catherine": "A woman wearing a blue dress appears until end of spell. She will obey polite, safe requests.",
     "Charm": "L creatures treat you like a friend.",
-    "Clone": "Any one life form is perfectly cloned.",  # EC
+    "Clone": "Any one life form is perfectly cloned.", // EC
     "Command": "A creature obeys a single, three word command that does not harm it.",
     "Comprehend": "You become fluent in all languages.",
     "Control Plants": "Nearby plants and trees obey you and gain the ability to move at 5 feet per round.",
@@ -325,5 +268,10 @@ SPELLS = {
     "Ward": "A silver circle 40ft across appears on the ground. Choose one thing that cannot cross it: Living creatures, dead creatures, projectiles or metal.",
     "Web": "Your wrists can shoot thick webbing.",
     "Wizard Mark": "Your finger can shoot a stream of ulfire colored paint. This paint is only visible to you, and can be seen at any distance, even through solid objects.",
-    "X Ray Vision": "You gain X Ray vision.",
+    "X Ray Vision": "You gain X Ray vision."
+  }
+};
+
+if (typeof module !== "undefined") {
+  module.exports = FREEd6Data;
 }
